@@ -172,7 +172,7 @@ export default function App() {
           <input placeholder="First Name" value={firstName} onChange={e => setFirstName(e.target.value)} />
           <input placeholder="Middle Name" value={middleName} onChange={e => setMiddleName(e.target.value)} />
           <input placeholder="Last Name" value={lastName} onChange={e => setLastName(e.target.value)} />
-          <input type="date" value={dob} onChange={e => setDob(e.target.value)} />
+          <input placeholder="DOB" type="date" value={dob} onChange={e => setDob(e.target.value)} />
           <input placeholder="Mobile Number" value={mobile} onChange={e => setMobile(e.target.value)} maxLength={10} />
           <button onClick={handleCalculate} disabled={!isFormValid}>Calculate</button>
         </div>
