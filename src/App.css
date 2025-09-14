@@ -120,3 +120,22 @@ body {
     flex-direction: column;
   }
 }
+
+@media screen and (max-width: 480px) {
+
+  .input-section input {
+    flex: 1 1 50px;
+    padding: 12px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+  }
+
+  .header h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #4b2be3;
+    margin: 0;
+  }
+}
