@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #c3cfe2, #e0c3fc);
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.calculator-card {
+  background: #fff;
+  border-radius: 25px;
+  padding: 30px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #4b2be3;
+  margin: 0;
+}
+
+.header p {
+  text-align: center;
+  color: #4b2be3;
+  margin: 5px 0 30px;
+  font-size: 1.1rem;
+}
+
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex: 1 1 200px;
+  padding: 12px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+}
+
+.input-section input:focus {
+  border-color: #4b2be3;
+  box-shadow: 0 0 8px rgba(75, 43, 227, 0.4);
+}
+
+.input-section button {
+  flex: 1 1 100%;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(90deg, #4b2be3, #8e2de2);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-section button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.result-section {
+  margin-top: 30px;
+}
+
+.card {
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #4b2be3;
+}
+
+.alert {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.positive {
+  color: green;
+  font: bold;
+}
+
+.negative {
+  color: red;
+  font: bold;
+}
+
+.neutral {
+  color: blue;
+  font: bold;
+}
+
+@media(max-width:768px) {
+  .input-section {
+    flex-direction: column;
+  }
+}
